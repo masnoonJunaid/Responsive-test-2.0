@@ -40,7 +40,7 @@ background-color:#272727;
 }
 
 .search-bar:focus{
-  border:solid white;
+  border:solid #A00028 ;
 }
 
 .search-icon{
@@ -57,33 +57,38 @@ background-color:#272727;
 .article{
   background-image: url("images/B&W_bg.jpg");
   max-width: 100%;
-  height:50vh;
   background-size:cover;
   background-repeat: no-repeat;
+  height: 50vh;
   background-attachment:scroll;
 }
 
 #article-head{
   color: white;
   line-height: 2.5rem;
+  margin:3%;
   font-size: 30px;
+  margin-left: 3%;
 }
-.article-text{
+.mobile-text{
   color:lightgrey;
   font-family: Roboto, italic;
   text-align: justify;
   margin-left: 2%;
-  width: 80%;
+  width: 60vw;
   font-size: 12px;
   display: block;
 }
 
-.peak-img{
+.tablet-text{
   width: 80%;
-  margin-left:auto;
+}
+
+.peak-img{
+  width: 80vw;
+  margin-left: auto;
   margin-right: auto;
   text-align: center;
-  position: absolute;
 }
 
 .light_blue{
@@ -130,8 +135,9 @@ background-color:#272727;
 
 .foo-list{
   list-style-type: none;
-  margin: 4%;
-  padding: 4%;
+  margin: 2%;
+  padding: 0.9%;
+  margin-top:10%;
 
 }
 
@@ -163,19 +169,17 @@ background-color:#272727;
   .menu-space{
   margin-bottom: 10%;
   padding: 3%;
-  height: 2%;
+  height: 4px;
   }
-.tablet-text{
-  font-size:15px;
-  width: 60%;
-  color: lightgrey;
-}
+  .mobile-text{
+    margin-right: 40%;
+  }
+
+
 
 .peak-img{
-  float: right;
-  width:30%;
-  margin-left: 60%;
-  padding: 0;
+  margin-left: 90%;
+  width:43vw;
 
 }
 
@@ -208,7 +212,7 @@ background-color:#272727;
 
 }
 
-@media screen and (min-width:751px){
+@media screen and (min-width:751px) and  (max-width:1024px){
 
   .grid-display{
     display: flex;
@@ -237,7 +241,7 @@ background-color:#272727;
 
   .peak-img{
     float: right;
-    width:30%;
+    width:25vw;
     padding: 0;
 
   }
